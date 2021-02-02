@@ -1,0 +1,25 @@
+version: '3.3'
+
+services:
+  pgsql:
+    image: postgres:12
+    restart: always
+    environment:
+      - POSTGRES_DB=contest
+      - POSTGRES_USER=contest
+      - POSTGRES_PASSWORD=secret
+    volumes:
+      - postgresql:/var/lib/postgresql
+    ports:
+    - 15432:5432
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 18080:8080
+
+volumes:
+  postgresql:
+  data01:
+    driver: local

@@ -1,0 +1,34 @@
+{
+  "name": "javascript-lessons",
+  "version": "1.0.0",
+  "description": "JavaScript Lessons and testing",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "prepublishOnly": "npm run build",
+    "watch": "babel src --out-dir dist -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/websofter/javascript-lessons.git"
+  },
+  "keywords": [
+    "ECMAScript",
+    "JavaScript",
+    "Lessons"
+  ],
+  "author": "David Amirkhanov",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/websofter/javascript-lessons/issues"
+  },
+  "homepage": "https://github.com/websofter/javascript-lessons#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11"
+  },
+  "dependencies": {
+    "core-js": "^3.8.2"
+  }
+}
