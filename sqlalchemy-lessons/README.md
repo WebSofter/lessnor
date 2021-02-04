@@ -5,3 +5,6 @@
 
 ####  install SQLAlchemy
 `$ pip install sqlalchemy`
+
+####  install Postgres driver for python
+`$ psycopg2`

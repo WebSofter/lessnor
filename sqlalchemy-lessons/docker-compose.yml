@@ -5,8 +5,8 @@ services:
     image: postgres:12
     restart: always
     environment:
-      - POSTGRES_DB=contest
-      - POSTGRES_USER=contest
+      - POSTGRES_DB=db
+      - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=secret
     volumes:
       - postgresql:/var/lib/postgresql

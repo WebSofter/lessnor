@@ -1,0 +1,32 @@
+{
+  "name": "sql-lessons",
+  "version": "1.0.0",
+  "description": "SQL Lesson Scripts",
+  "main": "index.js",
+  "scripts": {
+    "pg": "node -r esm src/postgres/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/WebSofter/lessnor.git"
+  },
+  "keywords": [
+    "SQL",
+    "MySQL",
+    "Postgres",
+    "SQLite"
+  ],
+  "author": "David Amorkhanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebSofter/lessnor/issues"
+  },
+  "homepage": "https://github.com/WebSofter/lessnor#readme",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "mysql": "^2.18.1",
+    "pg": "^8.5.1",
+    "sqlite3": "^5.0.1"
+  }
+}

@@ -1,0 +1,42 @@
+version: '3.3'
+
+services:
+  pgsql:
+    image: postgres:12
+    restart: always
+    environment:
+      - POSTGRES_DB=db
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=secret
+    volumes:
+      - postgresql:/var/lib/postgresql
+    ports:
+    - 15432:5432
+  mysql:
+    image: mysql:8
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
+      - MYSQL_DATABASE=db
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=secret
+    command: ['mysqld', '--character-set-server=utf8', '--collation-server=utf8_unicode_ci']
+    volumes:
+      - mysql:/var/lib/mysql
+    ports:
+    - "13306:3306"
+  sqlite3:
+    image: nouchka/sqlite3:latest
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./db/:/root/db/
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 18080:8080
+volumes:
+  postgresql:
+  mysql:
+  data01:
+    driver: local
