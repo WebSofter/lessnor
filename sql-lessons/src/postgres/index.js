@@ -26,3 +26,11 @@ client.query('SELECT NOW()', (err, res) => {
   client.end()
 })
 */
+
+//docker exec -it sql-lessons_pgsql_1 bash
+//or for Linux
+//docker exec -it sql-lessons_pgsql_1 /bin/bash
+//su postgres
+//psql
+//or
+//psql -d db -U admin
