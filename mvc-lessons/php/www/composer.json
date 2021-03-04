@@ -1,0 +1,23 @@
+{
+    "name": "websofter/mvc-lessons",
+    "description": "PHP/MVC project as task manager",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Amirkhanov",
+            "email": "mail.websofter@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "services/myserv/Ksl.php"
+        ],
+        "psr-4": {},
+        "files": []
+    },
+    "require": {
+        "twig/twig": "^3.0"
+    },
+    "require-dev": {
+    }
+}

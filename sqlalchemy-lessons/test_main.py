@@ -1,5 +1,5 @@
 from sqlalchemy import create_engine  
-from sqlalchemy import Column, String  
+from sqlalchemy import Column, String , Integer
 from sqlalchemy.ext.declarative import declarative_base  
 from sqlalchemy.orm import sessionmaker
 
@@ -9,11 +9,11 @@ db = create_engine(db_string)
 Base = declarative_base()
 
 class Film(Base):  
-    __tablename__ = 'films'
-
-    title = Column(String, primary_key=True)
-    director = Column(String)
-    year = Column(String)
+    __tablename__ = 'film'
+    id = Column(Integer, primary_key=True)
+    title = Column(String(50))
+    director = Column(String(50))
+    year = Column(String(50))
 
 Session = sessionmaker(db)  
 session = Session()
