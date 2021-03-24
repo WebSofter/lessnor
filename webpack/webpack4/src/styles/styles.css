@@ -1,0 +1,23 @@
+@import '~normalize.css';
+@import './roboto.css';
+
+.container {
+    font-family: 'Roboto';
+    background-color: azure;
+}
+.container h1{
+    text-align: center;
+}
+.container .logo{
+    background-image: url('../assets/img_jpg.jpg');
+    background-size: 100% auto;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+}
+.code{
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 150px;
+    width: 150px;
+}

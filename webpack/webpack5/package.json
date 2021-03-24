@@ -1,0 +1,49 @@
+{
+  "name": "webpack-5",
+  "version": "1.0.0",
+  "description": "Basic webpack 5 oilerplate",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "start": "cross-env NODE_ENV=development webpack serve --mode development"
+  },
+  "author": "David Amirkhanov",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^8.1.0",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.3.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^9.0.0",
+    "imagemin-webpack": "^5.1.1",
+    "mini-css-extract-plugin": "^1.3.9",
+    "node-sass": "^5.0.0",
+    "css-minimizer-webpack-plugin": "^1.3.0",
+    "css-loader": "^5.1.3",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "sass-loader": "^11.0.1",
+    "stylelint": "^13.12.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "^5.27.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "focus-visible": "^5.2.0",
+    "jquery": "^3.6.0",
+    "normalize.css": "^8.0.1"
+  }
+}
