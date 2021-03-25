@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Bold.ttf") format('true-type');
+}
+
+.container, .image {
+    font-family: Roboto;
+    background-color: aliceblue;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+.container h2{
+    color: blueviolet;
+}
+.image {
+    background-image: url(../img/img_png.png);
+    background-size: auto 100%;
+}
